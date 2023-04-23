@@ -28,6 +28,7 @@ int _printf(const char *format, ...)
 			{
 				len += chk[_index].func(args);
 				i += 2;
+				break;
 			}
 		}
 		_putchar(format[i]);
