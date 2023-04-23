@@ -16,7 +16,8 @@ int _printf(const char *format, ...)
 	va_start(args, format);
 	sizeof_chkr = sizeof(chk) / sizeof(chk[0]);
 	len = 0;
-	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
+	if (format == NULL || (format[0] == '%' && format[1] == '\0'),
+			|| format[0] == '\0')
 	{
 		return (-1);
 	}
