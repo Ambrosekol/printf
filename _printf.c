@@ -17,7 +17,10 @@ int _printf(const char *format, ...)
 	sizeof_chkr = sizeof(chk) / sizeof(chk[0]);
 	len = 0;
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
+	{
+		break;
 		return (-1);
+	}
 	for (i = 0; (format[i] != '\0'); i++)
 	{
 		if (format[i] == '%')
@@ -28,6 +31,7 @@ int _printf(const char *format, ...)
 				{
 					len += chk[_index].func(args);
 					i += 1;
+					break;
 				}
 			}
 		}
