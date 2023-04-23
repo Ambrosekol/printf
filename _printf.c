@@ -29,7 +29,7 @@ int _printf(const char *format, ...)
 				if (format[i + 1] == *(chk[_index].id + 1))
 				{
 					len += chk[_index].func(args);
-					i += 2;
+					i += 1;
 					break;
 				}
 			}
