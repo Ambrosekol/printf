@@ -11,7 +11,7 @@ int _printf(const char *format, ...)
 		{"%s", putstrng}, {"%%", putper}, {"%c", print_char}
 	};
 	va_list args;
-	int i, _index, sizeof_chkr, len, d;
+	int i, _index, sizeof_chkr, len;
 
 	va_start(args, format);
 	sizeof_chkr = sizeof(chk) / sizeof(chk[0]);
@@ -22,7 +22,6 @@ int _printf(const char *format, ...)
 	}
 	for (i = 0; (format[i] != '\0'); i++)
 	{
-		d = i;
 		for (_index = 0; _index < sizeof_chkr; _index++)
 		{
 			if (chk[_index].id[0] == format[i] && chk[_index].id[1] == format[1 + i])
@@ -30,7 +29,6 @@ int _printf(const char *format, ...)
 				len += chk[_index].func(args);
 				i += 2;
 			}
-			i = d;
 		}
 		_putchar(format[i]);
 		len++;
