@@ -22,17 +22,23 @@ int _printf(const char *format, ...)
 	}
 	for (i = 0; (format[i] != '\0'); i++)
 	{
-		for (_index = 0; _index < sizeof_chkr; _index++)
+		if (format[i] == '%')
 		{
-			if (chk[_index].id[0] == format[i] && chk[_index].id[1] == format[1 + i])
+			for (_index = 0; _index < sizeof_chkr; _index++)
 			{
-				len += chk[_index].func(args);
-				i += 2;
-				break;
+				if (format[i + 1] == *(chk[_index].id + 1))
+				{
+					len += chk[_index].func(args);
+					i += 1;
+					break;
+				}
 			}
 		}
-		_putchar(format[i]);
-		len++;
+		else
+		{
+			_putchar(format[i]);
+			len++;
+		}
 	}
 	va_end(args);
 	return (len);
