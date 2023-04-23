@@ -17,7 +17,7 @@ int _printf(const char *format, ...)
 	sizeof_chkr = sizeof(chk) / sizeof(chk[0]);
 	len = 0;
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'),
-			|| format[0] == '\0')
+			|| format[0] == '\n')
 	{
 		return (-1);
 	}
