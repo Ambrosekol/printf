@@ -18,7 +18,7 @@ int _printf(const char *format, ...)
 	len = 0;
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 	{
-		return (-1);
+		return (1);
 	}
 	for (i = 0; (format[i] != '\0'); i++)
 	{
@@ -27,12 +27,12 @@ int _printf(const char *format, ...)
 			if (chk[_index].id[0] == format[i] && chk[_index].id[1] == format[1 + i])
 			{
 				len += chk[_index].func(args);
-				i = i + 2;
+				i += 2;
 			}
 		}
 		_putchar(format[i]);
 		len++;
 	}
 	va_end(args);
-	return (len - 1);
+	return (len);
 }
