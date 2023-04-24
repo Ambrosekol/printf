@@ -8,7 +8,8 @@
 int _printf(const char *format, ...)
 {
 	check_match chk[] = {
-		{"%s", putstrng}, {"%%", putper}, {"%c", print_char}
+		{"%s", putstrng}, {"%%", putper},
+		{"%c", print_char}, {"%d", putint}, {"%i", putni}
 	};
 	va_list args;
 	int i, _index, sizeof_chkr, len;
