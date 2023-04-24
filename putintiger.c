@@ -6,12 +6,11 @@
  */
 int putint(va_list list)
 {
-	int num, tmp, len, i, cntr, outlen;
+	int num, tmp, len, i, outlen;
     char *p;
 
     num = va_arg(list, int);
     tmp = abs(num);
-    cntr = 0;
 	len = 0;
 	i = 0;
     outlen = 0;
@@ -41,7 +40,7 @@ int putint(va_list list)
                 return (0);
             sprintf(p, "%d", num);
         }
-        for (i = 0; i < strlen(p); i++)
+        for (i = 0; i < (int) strlen(p); i++)
         {
             _putchar(p[i]);
             outlen++;
