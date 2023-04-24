@@ -23,7 +23,7 @@ int putni(va_list list, int print_sign)
 	else if (num < 0)
 	{
 		if (print_sign)
-		
+
 		_putchar('-');
 		num = abs(num);
 		len++;
