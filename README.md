@@ -34,10 +34,10 @@ int _printf(const char *format, ...);
 _printf("format string", var1, var2, ...);
 
 # Examples
-- Basic string: _printf("%s Alx", "Hello");
+- Basic string: _printf("%s Alx\n", "Hello");
 - Output: Hello Alx
 
-- Print integers: _printf("This is an array element: arr[%d]:%c", 32, arr[32]);
+- Print integers: _printf("This is an array element: arr[%d]:%c\n", 32, arr[32]);
 - Output: This is an array element arr[32]:A
 
 # Specifiers
