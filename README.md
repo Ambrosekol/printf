@@ -56,3 +56,6 @@ _printf("format string", var1, var2, ...);
 | p	| Pointer address	| 0x403212 |
 | r	| Reversed string of characters	| dlroW olleH |
 | R	| ROT13 translation of string	| Uryyb |
+
+# Flags
+## (Halted for now...)
