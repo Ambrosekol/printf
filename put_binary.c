@@ -3,32 +3,32 @@
 /**
  * putbin - prints a binary number.
  * @val: arguments.
- * Return: cont.
+ * Return: cnt.
  */
 int putbin(va_list val)
 {
-	int flag = 0;
-	int cont = 0;
+	int flg = 0;
+	int cnt = 0;
 	int i, a = 1, b;
-	unsigned int num = va_arg(val, unsigned int);
+	unsigned int new_val = va_arg(val, unsigned int);
 	unsigned int p;
 
 	for (i = 0; i < 32; i++)
 	{
-		p = ((a << (31 - i)) & num);
+		p = ((a << (31 - i)) & new_val);
 		if (p >> (31 - i))
-			flag = 1;
-		if (flag)
+			flg = 1;
+		if (flg)
 		{
 			b = p >> (31 - i);
 			_putchar(b + 48);
-			cont++;
+			cnt++;
 		}
 	}
-	if (cont == 0)
+	if (cnt == 0)
 	{
-		cont++;
+		cnt++;
 		_putchar('0');
 	}
-	return (cont);
+	return (cnt);
 }
