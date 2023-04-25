@@ -5,9 +5,10 @@
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <limits.h>
+
 int _printf(const char *format, ...);
 int _putchar(char c);
+void _puts(char *str);
 /**
  * struct checker - maps the specifiers for printf
  * @id: char pointer of the specifier
@@ -24,4 +25,5 @@ int putper(void);
 int print_char(va_list arg);
 int putint(va_list list);
 int putni(va_list list, int print_sign);
+int putbin(va_list list);
 #endif
