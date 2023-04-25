@@ -25,9 +25,9 @@ int putint(va_list list)
 			p[0] = '-';
 		}
 	}
-	else 
+	else
 	{
-		p = malloc (len + 1);
+		p = malloc(len + 1);
 		if (p == NULL)
 			return (0);
 		sprintf(p, "%d", num);
