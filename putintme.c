@@ -6,10 +6,10 @@
  */
 int putint(va_list list)
 {
-	int num, len, outlen;
+	int i, num, len, outlen;
 	char *p;
 
-	num = var_arg(list, int);
+	num = va_arg(list, int);
 	len = num == 0 ? 1 : 0;
 	if (num < 0)
 	{
