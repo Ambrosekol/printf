@@ -16,6 +16,7 @@ int putint(va_list list)
 	if (num == 0)
 	{
 		_putchar('0');
+		return (1);
 	}
 	else
 	{
