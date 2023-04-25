@@ -45,5 +45,6 @@ int putint(va_list list)
 			outlen++;
 		}
 	}
+	free(p);
 	return (outlen);
 }
