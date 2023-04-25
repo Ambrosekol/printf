@@ -45,14 +45,14 @@ _printf("format string", var1, var2, ...);
 | Specifier	    | Output    | Example   |
 | ------------ | ------------ | ---------- |
 | c	    | Character	    | y |
-d or i	Signed integer	1024, -1024
-s	String of characters	Hello Alx
-b	Binary representation of unsigned integer	01010110
-u	Unsigned integer	1024
-o	Unsigned octal	432
-x	Unsigned hexadecimal integer	3ca
-X	Unsigned hexadecimal integer (uppercase)	3CA
-S	String with hex-ascii value replacing special characters	\x0A\x0A
-p	Pointer address	0x403212
-r	Reversed string of characters	dlroW olleH
-R	ROT13 translation of string	Uryyb
+| d or i	| Signed integer	| 1024, -1024  |
+| s	| String of characters	| Hello Alx |
+| b	| Binary representation of unsigned integer	| 01010110 |
+| u	| Unsigned integer	| 1024 |
+| o	| Unsigned octal	| 432 |
+| x	| Unsigned hexadecimal integer	| 3ca |
+| X	| Unsigned hexadecimal integer (uppercase)	| 3CA |
+| S	| String with hex-ascii value replacing special characters	| \x0A\x0A |
+| p	| Pointer address	| 0x403212 |
+| r	| Reversed string of characters	| dlroW olleH |
+| R	| ROT13 translation of string	| Uryyb |
