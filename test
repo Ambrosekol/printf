@@ -10,7 +10,7 @@
 int main(void)
 {
     int a;
-    a = _printf("Length:[%d]\n", 1234567890);
+    a = _printf("Length:[%b]\n", 100);
     printf("%d\n", a);
     return (0);
 }
