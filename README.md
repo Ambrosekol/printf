@@ -1,7 +1,7 @@
 # Custom printf function
 
 ## Description
-The printf function sends formatted output to stdout. For the purposes of learning, the cohort-13 students ([Ambrose K.](https://github.com/Ambrosekol "Learn about Ambrose!") and [Ademola ASAMU](https://github.com/AdemolaAsamu "Learn about Ademola!")) have developed a custom _printf() function.
+The printf function sends formatted output to stdout. For the purposes of learning, the cohort-13 students ([Ambrose K.](https://github.com/Ambrosekol "Learn about Ambrose!") and [Ademola ASAMU](https://github.com/AdemolaAsamu "Learn about Ademola!")) have developed a custom betty compliant _printf() function.
 
 The format string of the _printf() function is a character string, beginning and ending in its initial shift state, if any. Arguments are placed using the percentage "%" operator.
 
