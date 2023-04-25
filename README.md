@@ -3,11 +3,12 @@
 ## Description
 The printf function sends formatted output to stdout. For the purposes of learning, the cohort 13 students Ambrose and Ademola have developed a custom _printf() function.
 
-The format string of the _printf() function is a character string, beginning and ending in its initial shift state, if any. Arguments are placed using the percentage % operator.
+The format string of the _printf() function is a character string, beginning and ending in its initial shift state, if any. Arguments are placed using the percentage "%" operator.
 
 ## Resources
 - Secrets of printf by Don Colton
-- Authorized functions and macros
+
+## Authorized functions and macros
 - write (man 2 write)
 - malloc (man 3 malloc)
 - free (man 3 free)
