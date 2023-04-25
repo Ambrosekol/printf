@@ -34,7 +34,7 @@ int putbin(va_list list)
 			num >>= 1;
 		}
 		num_str[bits] = '\0';
-		len = _puts(num_str);
+		_puts(num_str);
 		free(num_str);
 	}
 	return (len);
