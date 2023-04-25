@@ -6,36 +6,35 @@
  */
 int putbin(va_list list)
 {
-	unsigned int num, mask;
-	int len, bits, i;
+	unsigned int num;
+	int count, i, star_zero;
 	char *num_str;
 
 	num = va_arg(list, unsigned int);
-	if (num == 0)
+	num_str = malloc(sizeof(char) * 33);
+	count = 0;
+	
+	if (num_str == NULL)
+		return (-1);
+	for (i = 31; i >= 0; i--)
 	{
-		_putchar('0');
-		len = 1;
+		if (num & (1 << i))
+			num_str[31 - i] = '1';
+		else
+			num_str[31 - i] = '0';
 	}
-	else
+	num_str[32] = '\0';
+	star_zero = 1;
+	for (i = 0; i < 32; i++)
 	{
-		bits = 0;
-		mask = ~0;
-		while ((mask & num) != 0)
+		if (num_str[i] == '1')
+			star_zero = 0;
+		if(!star_zero)
 		{
-			bits++;
-			mask <<= 1;
+			_putchar(num_str[i]);
+			count++;
 		}
-		num_str = malloc(bits + 1);
-		if (num_str == NULL)
-			return (0);
-		for (i = bits - 1; i >= 0; i--)
-		{
-			num_str[i] = (num & 1) + '0';
-			num >>= 1;
-		}
-		num_str[bits] = '\0';
-		_puts(num_str);
-		free(num_str);
 	}
-	return (len);
+	free(num_str);
+	return (count);
 }
