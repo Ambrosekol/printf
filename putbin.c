@@ -11,7 +11,7 @@ int putbin(va_list list)
 	char *num_str;
 
 	num = va_arg(list, unsigned int);
-	if (num == 0);
+	if (num == 0)
 	{
 		_putchar('0');
 		len = 1;
@@ -23,7 +23,7 @@ int putbin(va_list list)
 		while ((mask & num) != 0)
 		{
 			bits++;
-			mask<<= 1;
+			mask <<= 1;
 		}
 		num_str = malloc(bits + 1);
 		if (num_str == NULL)
