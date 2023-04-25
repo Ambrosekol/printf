@@ -30,16 +30,18 @@ The main files should include the main header file (main.h): #include main.h
 
 - int _printf(const char *format, ...);
 - typedef struct checker
-- {
--	 char *id;
--	 int (*func)();
-- } check_match;
+    {
+	     char *id;
+	     int (*func)();
+    } check_match;
 - int putstrng(va_list list);
 - int putper(void);
 - int print_char(va_list arg);
 - int putint(va_list list);
 - int putni(va_list list, int print_sign);
 - int putbin(va_list list);
+- int _putchar(char c);
+- void _puts(char *str);
 
 ## General use
 
