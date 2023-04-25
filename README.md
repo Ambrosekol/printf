@@ -58,4 +58,8 @@ _printf("format string", var1, var2, ...);
 | R	| ROT13 translation of string	| Uryyb |
 
 # Flags
-## (Halted for now...)
+- (Halted for now...)
+
+# Contributors
+- [Ambrose K.](https://github.com/Ambrosekol "Learn about Ambrose!")
+- [Ademola ASAMU](https://github.com/AdemolaAsamu "Learn about Ademola!")
