@@ -53,7 +53,7 @@ _printf("format string", var1, var2, ...);
 - Output: Hello Alx
 
 - Print integers: _printf("This is an array element: arr[%d]:%c\n", 32, arr[32]);
-- Output: This is an array element arr[32]:A
+- Output: This is an array element arr[32]
 
 # Specifiers
 
