@@ -31,7 +31,7 @@ int put_hex(va_list args)
 		if (rem < 10)
 			buffer[i++] = rem + '0';
 		else
-			buffer[i++] = (rem - 10) + 'i';
+			buffer[i++] = (rem - 10) + 'a';
 		num /= 16;
 	}
 	len += i;
