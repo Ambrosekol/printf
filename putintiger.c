@@ -11,8 +11,7 @@ int putint(va_list list)
 
 	num = va_arg(list, int);
 	tmp = abs(num);
-	len = 0, i = 0;
-	outlen = 0;
+	len = 0, i = 0,	outlen = 0;
 	if (num == 0)
 	{
 		_putchar('0');
