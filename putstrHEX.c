@@ -9,7 +9,7 @@ int putstrHEX(char f)
 {
 	unsigned int num;
 	int len, i, rem;
-	char buffer[20] = {0};
+	char buffer[20] = {'0'};
 
 	len = 0;
 	num = (int)f;
@@ -25,6 +25,11 @@ int putstrHEX(char f)
 		rem = num % 16;
 		if (rem < 10)
 			buffer[i++] = rem + '0';
+		else if (rem == 10)
+		{
+			buffer[i++] = (rem - 10) + 'A';
+			buffer[i++] = '0';
+		}
 		else
 			buffer[i++] = (rem - 10) + 'A';
 		num /= 16;
