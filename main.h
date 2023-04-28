@@ -30,4 +30,6 @@ int putbin(va_list list);
 int put_HEX(va_list args);
 int put_hex(va_list args);
 int putoct(va_list args);
+int putstrHEX(char f);
+int putS(va_list list);
 #endif

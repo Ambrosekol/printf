@@ -8,7 +8,7 @@
 int _printf(const char *format, ...)
 {
 	check_match chk[] = {
-		{"%s", putstrng}, {"%%", putper}, {"%b", putbin},
+		{"%s", putstrng}, {"%%", putper}, {"%b", putbin}, {"%S", putS},
 		{"%u", putni}, {"%o", putoct}, {"%c", print_char},
 		{"%d", putint}, {"%i", putint}, {"%x", put_hex}, {"%X", put_HEX}
 	};
