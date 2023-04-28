@@ -26,7 +26,8 @@ int putS(va_list list)
 			{
 				_putchar('\\');
 				_putchar('x');
-				putstrHEX(char_p[i]);
+				len += putstrHEX(char_p[i]);
+				len += 2;
 			}
 
 		}

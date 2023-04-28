@@ -34,7 +34,7 @@ int putstrHEX(char f)
 			buffer[i++] = (rem - 10) + 'A';
 		num /= 16;
 	}
-	len += i;
+	len = i;
 	for (i = i - 1; i >= 0; i--)
 		_putchar(buffer[i]);
 	return (len);
