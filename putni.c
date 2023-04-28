@@ -2,10 +2,9 @@
 /**
  * putni - prints the integer and returns len
  * @list: accept the list of type va_list
- * @print_sign: on and off for sign
  * Return: returns the len of the integer
  */
-int putni(va_list list, int print_sign)
+int putni(va_list list)
 {
 	int num, len, i, j;
 	char buffer[10] = {0};
@@ -20,14 +19,6 @@ int putni(va_list list, int print_sign)
 	{
 		_putchar('0');
 		return (1);
-	}
-	else if (num < 0)
-	{
-		if (print_sign)
-
-		_putchar(' ');
-		num = abs(num);
-		len++;
 	}
 
 	while (num != 0)

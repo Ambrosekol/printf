@@ -24,7 +24,7 @@ int putstrng(va_list list);
 int putper(void);
 int print_char(va_list arg);
 int putint(va_list list);
-int putni(va_list list, int print_sign);
+int putni(va_list list);
 int putbin(va_list list);
 int put_HEX(va_list args);
 int put_hex(va_list args);
