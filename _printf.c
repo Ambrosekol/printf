@@ -9,14 +9,14 @@ int _printf(const char *format, ...)
 {
 	check_match chk[] = {
 		{"%s", putstrng}, {"%%", putper}, {"%b", putbin},
-		{"%c", print_char}, {"%d", putint}, {"%i", putint}
+		{"%u", putni}, {"%o", putoct}, {"%c", print_char},
+		{"%d", putint}, {"%i", putint}, {"%x", put_hex}, {"%X", put_HEX}
 	};
 	va_list args;
 	int i, _index, sizeof_chkr, len;
 
 	va_start(args, format);
-	sizeof_chkr = sizeof(chk) / sizeof(chk[0]);
-	len = 0;
+	sizeof_chkr = sizeof(chk) / sizeof(chk[0]), len = 0;
 	if (format == NULL)
 		return (-1);
 	for (i = 0; (format[i] != '\0'); i++)

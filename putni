@@ -24,7 +24,7 @@ int putni(va_list list, int print_sign)
 	{
 		if (print_sign)
 
-		_putchar('-');
+		_putchar(' ');
 		num = abs(num);
 		len++;
 	}
