@@ -26,7 +26,7 @@ int putoct(va_list args)
 		num /= 8;
 	}
 	len += i;
-	for ( j = i - 1; j >= 0; j--)
+	for (j = i - 1; j >= 0; j--)
 		_putchar(buffer[j]);
 	return (len);
 }
